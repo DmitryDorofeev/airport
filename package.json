@@ -1,0 +1,15 @@
+{
+  "name": "aitboard",
+  "version": "1.0.0",
+  "description": "Airport board",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-stylus": "^2.0.5"
+  }
+}
