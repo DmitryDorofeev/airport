@@ -1,3 +1,7 @@
+$primary_color = #3498db
+$primary_dark_color = #2980b9
+$header_color = #356272
+
 body
 	margin 0
 	padding 0
@@ -6,23 +10,89 @@ body
 
 .board
 	width 100%
-	background-color #e67e22
 	position relative
-	
+	background-color $primary_color
+
 	&__control
 		padding 20px
-		
-	
+
 	&__header
 		display table
 		width 100%
 		position relative
+		overflow hidden
 		padding 10px 0
-		border-spacing 5px
 		text-align center
-		
+		background-color $header_color
+		z-index 3
+
 		&_stick
+			display none
 			position fixed
-		
-		&__item
-			display table-cell
+			top 0
+			left 0
+
+	&__content
+		display table
+		border-spacing 0px
+		border-collapse collapse
+		width 100%
+		position relative
+		overflow hidden
+		z-index 2
+		padding 10px 0
+		text-align center
+
+	&__row
+		display table-row
+		position relative
+
+		&:nth-child(odd)
+			background-color rgba(0, 0, 0, .1)
+
+		&:hover
+			background-color rgba(0, 0, 0, .3)
+
+	&__item
+		display table-cell
+		position relative
+		height 35px
+		border-spacing 0px
+		padding 5px
+
+		&:hover
+
+			&::after
+				position absolute
+				content '\00a0'
+				top -5000px // яб на самом деле сделал js'ом, но так как есть пожелание сделать без js, то вот
+				left 0 // плюс так точно быстрее, чем назначать каждый раз модификатор активности
+				height 50000px // THIS IS KOSTYYL'!!!
+				background-color rgba(0, 0, 0, .3)
+				width 100%
+				z-index -1
+
+
+		&_type
+			width 5%
+
+		&_number
+			width 5%
+
+		&_company
+			width 10%
+
+		&_logo
+			width 10%
+
+		&_plain
+			width 10%
+
+		&_airport
+			width 10%
+
+		&_time
+			width 5%
+
+		&_status
+			width 10%
