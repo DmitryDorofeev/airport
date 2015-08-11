@@ -1,4 +1,4 @@
-// Vanilla JS
+// Vanilla JS  <3
 
 window.addEventListener('load', onLoad);
 
@@ -8,13 +8,15 @@ function onLoad () {
 
 function initScrollActions() {
 
-	var header = document.getElementsByClassName('js-header')[0],
-		stickyHeader = document.getElementsByClassName('js-stick')[0];
+	var header = document.getElementsByClassName('board__header')[0];
+
+	var stickyHeader = header.cloneNode(true);
+	stickyHeader.className += ' board__header_stick';
+	header.parentNode.insertBefore(stickyHeader, header.nextSibling);
 
 	window.addEventListener('scroll', function (event) {
 		if (header.getBoundingClientRect().top <= 0) {
 			stickyHeader.style.display = 'table';
-			stick = true;
 		} else {
 			stickyHeader.style.display = 'none';
 		}

@@ -1,475 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="./main.css"/>
-	<title>Airport board</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./main.css"/>
+    <title>Airport board</title>
 </head>
 <body>
-	<div class="board">
-		<div class="board__control">
-			<input type="checkbox">
-		</div>
-		<div class="board__header js-header">
-			<div class="board__item board__item_type">Type</div>
-			<div class="board__item board__item_number">#</div>
-			<div class="board__item board__item_company">Company</div>
-			<div class="board__item board__item_logo">Logo</div>
-			<div class="board__item board__item_plain">Plane Type</div>
-			<div class="board__item board__item_airport">Airport</div>
-			<div class="board__item board__item_time">Time</div>
-			<div class="board__item board__item_status">Status</div>
-			<div class="board__item board__item_comment">Comment</div>
-		</div>
-		<div class="board__header board__header_stick js-stick">
-			<div class="board__item board__item_type">Type</div>
-			<div class="board__item board__item_number">#</div>
-			<div class="board__item board__item_company">Company</div>
-			<div class="board__item board__item_logo">Logo</div>
-			<div class="board__item board__item_plain">Plane Type</div>
-			<div class="board__item board__item_airport">Airport</div>
-			<div class="board__item board__item_time">Time</div>
-			<div class="board__item board__item_status">Status</div>
-			<div class="board__item board__item_comment">Comment</div>
-		</div>
-		<div class="board__content">
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-			<div class="board__row">
-				<div class="board__item board__item_type">
-					a
-				</div>
-				<div class="board__item board__item_number">
-					756
-				</div>
-				<div class="board__item board__item_company">
-					Aeroflot
-				</div>
-				<div class="board__item board__item_logo">
-					<img src="x" alt="">
-				</div>
-				<div class="board__item board__item_plain">
-					ba
-				</div>
-				<div class="board__item board__item_airport">
-					SVO
-				</div>
-				<div class="board__item board__item_time">
-					17:40
-				</div>
-				<div class="board__item board__item_status">
-					pending
-				</div>
-				<div class="board__item board__item_comment">
-					azaz
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="main.js"></script>
+<div class="board">
+    <input type="checkbox" id="departure" checked class="board__control board__control_departure">
+    <label for="departure">Вылет</label>
+    <input type="checkbox" id="arrival" checked class="board__control board__control_arrival">
+    <label for="arrival">Прилет</label>
+    <div class="board__header">
+        <div class="board__item board__type">Type</div>
+        <div class="board__item board__number">#</div>
+        <div class="board__item board__company">Company</div>
+        <div class="board__item board__logo">Logo</div>
+        <div class="board__item board__plane">Plane Type</div>
+        <div class="board__item board__shortplane">Plane Type</div>
+        <div class="board__item board__airport">Airport</div>
+        <div class="board__item board__time">Time</div>
+        <div class="board__item board__status">Status</div>
+        <div class="board__item board__comment">Comment</div>
+    </div>
+    <div class="board__content">
+        <div class="board__row board__row_arrival">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                Aeroflot
+            </div>
+            <div class="board__item board__logo">
+                <img src="aeroflot.jpg" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING ***
+            </div>
+            <div class="board__item board__shortplane">
+                B***
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_departure">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                Aeroflot
+            </div>
+            <div class="board__item board__logo">
+                <img src="aeroflot.jpg" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING XXX
+            </div>
+            <div class="board__item board__shortplane">
+                BXXX
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_arrival">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                Airfrance
+            </div>
+            <div class="board__item board__logo">
+                <img src="airfrance.png" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING
+            </div>
+            <div class="board__item board__shortplane">
+                B
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_departure">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                Aeroflot
+            </div>
+            <div class="board__item board__logo">
+                <img src="aeroflot.jpg" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING
+            </div>
+            <div class="board__item board__shortplane">
+                B747
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_arrival">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                Airfrance
+            </div>
+            <div class="board__item board__logo">
+                <img src="airfrance.png" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING
+            </div>
+            <div class="board__item board__shortplane">
+                B747
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_arrival">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                Airfrance
+            </div>
+            <div class="board__item board__logo">
+                <img src="airfrance.png" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING
+            </div>
+            <div class="board__item board__shortplane">
+                B747
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_departure">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                Airfrance
+            </div>
+            <div class="board__item board__logo">
+                <img src="airfrance.png" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING
+            </div>
+            <div class="board__item board__shortplane">
+                B747
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_departure">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                Aeroflot
+            </div>
+            <div class="board__item board__logo">
+                <img src="aeroflot.jpg" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING
+            </div>
+            <div class="board__item board__shortplane">
+                B747
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_departure">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                Aeroflot
+            </div>
+            <div class="board__item board__logo">
+                <img src="aeroflot.jpg" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING
+            </div>
+            <div class="board__item board__shortplane">
+                B747
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_departure">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                S7
+            </div>
+            <div class="board__item board__logo">
+                <img src="s7.png" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING
+            </div>
+            <div class="board__item board__shortplane">
+                B747
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_departure">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                S7
+            </div>
+            <div class="board__item board__logo">
+                <img src="s7.png" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING
+            </div>
+            <div class="board__item board__shortplane">
+                B747
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_departure">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                Aeroflot
+            </div>
+            <div class="board__item board__logo">
+                <img src="aeroflot.jpg" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING 747
+            </div>
+            <div class="board__item board__shortplane">
+                B747
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_departure">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                Airfrance
+            </div>
+            <div class="board__item board__logo">
+                <img src="airfrance.png" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING 747
+            </div>
+            <div class="board__item board__shortplane">
+                B747
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+        <div class="board__row board__row_arrival">
+            <div class="board__item board__type"></div>
+            <div class="board__item board__number">
+                756
+            </div>
+            <div class="board__item board__company">
+                S7
+            </div>
+            <div class="board__item board__logo">
+                <img src="s7.png" alt="">
+            </div>
+            <div class="board__item board__plane">
+                BOEING 777
+            </div>
+            <div class="board__item board__shortplane">
+                B777
+            </div>
+            <div class="board__item board__airport">
+                SVO
+            </div>
+            <div class="board__item board__time">
+                17:40
+            </div>
+            <div class="board__item board__status">
+                pending
+            </div>
+            <div class="board__item board__comment">
+                azaz
+            </div>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
