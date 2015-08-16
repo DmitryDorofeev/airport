@@ -1,0 +1,140 @@
+.board
+	width 100%
+	position relative
+	background-color $primary_color
+
+	&__header
+		display table
+		width 100%
+		position -webkit-sticky
+		position sticky
+		top 0
+		overflow hidden
+		padding 10px 0
+		text-align center
+		background-color $header_color
+		color $primary_color
+		z-index 3
+
+		&_stick
+			display none
+			position fixed
+			top 0
+			left 0
+
+	&__content
+		display table
+		border-spacing 0
+		border-collapse collapse
+		width 100%
+		position relative
+		overflow hidden
+		z-index 2
+		padding 10px 0
+		text-align center
+
+	&__row
+		display none
+		position relative
+		text-decoration none
+		color #666666
+
+		&:hover
+			background-color rgba(0, 0, 0, .3)
+
+		&_arrival
+			.board__type
+				background-image url('arrival.png')
+
+		&_departure
+			.board__type
+				background-image url('departure.png')
+
+
+	&__item
+		display table-cell
+		position relative
+		height 40px
+		border-spacing 0
+		padding 5px
+		vertical-align middle
+
+		&:hover
+			color $primary_color
+
+			&::after
+				position absolute
+				content '\00a0'
+				top -5000px
+				left 0
+				height 50000px
+				background-color rgba(0, 0, 0, .3)
+				width 100%
+				z-index -1
+
+
+	&__type
+		width 5%
+		min-width 50px
+		height 50px
+		background-size contain
+		background-position center center
+		background-repeat no-repeat
+
+	&__number
+		min-width 50px
+		width 5%
+
+	&__company
+		width 15%
+		@media screen and (max-width: 900px)
+			display: none
+
+	&__logo
+		width 10%
+		img
+			width 100%
+
+	&__plane
+		width 15%
+		@media screen and (max-width: 800px)
+			display: none
+
+	&__shortplane
+		display: none
+		@media screen and (max-width: 800px)
+			display: table-cell
+			width 15%
+
+	&__airport
+		width 10%
+
+	&__time
+		width 10%
+
+	&__status
+		width 10%
+
+.board__control_departure:not(:checked) ~ .board__control_arrival:checked ~ .board__content .board__row
+
+	&.board__row_arrival
+		display table-row
+
+	&:hover
+		background-color rgba(0, 0, 0, .3)
+
+.board__control_departure:checked ~ .board__control_arrival:not(:checked) ~ .board__content .board__row
+	&.board__row_departure
+		display table-row
+
+.board__control_departure:checked ~ .board__control_arrival:checked ~ .board__content .board__row
+	display table-row
+
+	&:nth-child(odd)
+		background-color rgba(30, 30, 30, .1)
+
+	&:nth-child(even)
+		background-color transparent
+
+	&:hover
+		background-color rgba(0, 0, 0, .3)

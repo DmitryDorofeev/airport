@@ -8,5 +8,5 @@ gulp.task('stylus', function () {
 });
 
 gulp.task('default', ['stylus'], function () {
-	gulp.watch('./styles/*', ['stylus'])
+	gulp.watch('./styles/*.styl', ['stylus'])
 });
